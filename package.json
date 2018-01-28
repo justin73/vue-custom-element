@@ -1,6 +1,6 @@
 {
   "name": "vue-hi-there",
-  "version": "1.0.2s",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/vueElement.js",
   "scripts": {

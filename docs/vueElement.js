@@ -5,7 +5,7 @@ var vueElement = (function () {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = "";style.type = 'text/css';if (style.styleSheet) {
+        css = " h1[data-v-6033b293], h2[data-v-6033b293] { font-weight: normal; } ul[data-v-6033b293] { list-style-type: none; padding: 0; } li[data-v-6033b293] { display: inline-block; margin: 0 10px; } a[data-v-6033b293] { color: #42b983; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -14,37 +14,17 @@ var vueElement = (function () {
 })();
 
 var DemoElement = { render: function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('h4', [_vm._v(_vm._s(_vm.message))]), _vm._v(" "), _c('el-table', { attrs: { "data": _vm.tableData } }, [_c('el-table-column', { attrs: { "prop": "prop", "label": "Prop name" } }), _vm._v(" "), _c('el-table-column', { attrs: { "prop": "value", "label": "Value" } }), _vm._v(" "), _c('el-table-column', { attrs: { "prop": "type", "label": "typeof" } })], 1)], 1);
-  }, staticRenderFns: [],
-  props: ['prop1', 'prop2', 'prop3', 'longPropName'],
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "hello" }, [_c('h1', [_vm._v(_vm._s(_vm.msg))]), _vm._v(" "), _c('h2', [_vm._v("Essential Links")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h2', [_vm._v("Ecosystem")]), _vm._v(" "), _vm._m(1)]);
+  }, staticRenderFns: [function () {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('ul', [_c('li', [_c('a', { attrs: { "href": "https://vuejs.org", "target": "_blank" } }, [_vm._v(" Core Docs ")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://forum.vuejs.org", "target": "_blank" } }, [_vm._v(" Forum ")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://chat.vuejs.org", "target": "_blank" } }, [_vm._v(" Community Chat ")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://twitter.com/vuejs", "target": "_blank" } }, [_vm._v(" Twitter ")])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "http://vuejs-templates.github.io/webpack/", "target": "_blank" } }, [_vm._v(" Docs for This Template ")])])]);
+  }, function () {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('ul', [_c('li', [_c('a', { attrs: { "href": "http://router.vuejs.org/", "target": "_blank" } }, [_vm._v(" vue-router ")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "http://vuex.vuejs.org/", "target": "_blank" } }, [_vm._v(" vuex ")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "http://vue-loader.vuejs.org/", "target": "_blank" } }, [_vm._v(" vue-loader ")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://github.com/vuejs/awesome-vue", "target": "_blank" } }, [_vm._v(" awesome-vue ")])])]);
+  }], _scopeId: 'data-v-6033b293',
+  name: 'HelloWorld',
   data() {
     return {
-      message: 'Hello Vue-custom-element!'
+      msg: 'Welcome to Your Vue.js App'
     };
-  },
-  computed: {
-    tableData() {
-      return [{
-        prop: 'prop1',
-        value: this.prop1,
-        type: typeof this.prop1
-      }, {
-        prop: 'prop2',
-        value: this.prop2,
-        type: typeof this.prop2
-      }, {
-        prop: 'prop3',
-        value: this.prop3,
-        type: typeof this.prop3
-      }, {
-        prop: 'long-prop-name',
-        value: this.longPropName,
-        type: typeof this.longPropName
-      }];
-    }
-  },
-  created() {
-    console.info('demo-basic created()');
   }
 };
 

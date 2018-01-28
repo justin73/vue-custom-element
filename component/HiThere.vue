@@ -1,51 +1,113 @@
 <template>
-  <div>
-    <h4>{{ message }}</h4>
-
-    <el-table :data="tableData">
-      <el-table-column prop="prop" label="Prop name"></el-table-column>
-      <el-table-column prop="value" label="Value"></el-table-column>
-      <el-table-column prop="type" label="typeof"></el-table-column>
-    </el-table>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <h2>Essential Links</h2>
+    <ul>
+      <li>
+        <a
+          href="https://vuejs.org"
+          target="_blank"
+        >
+          Core Docs
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://forum.vuejs.org"
+          target="_blank"
+        >
+          Forum
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://chat.vuejs.org"
+          target="_blank"
+        >
+          Community Chat
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/vuejs"
+          target="_blank"
+        >
+          Twitter
+        </a>
+      </li>
+      <br>
+      <li>
+        <a
+          href="http://vuejs-templates.github.io/webpack/"
+          target="_blank"
+        >
+          Docs for This Template
+        </a>
+      </li>
+    </ul>
+    <h2>Ecosystem</h2>
+    <ul>
+      <li>
+        <a
+          href="http://router.vuejs.org/"
+          target="_blank"
+        >
+          vue-router
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://vuex.vuejs.org/"
+          target="_blank"
+        >
+          vuex
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://vue-loader.vuejs.org/"
+          target="_blank"
+        >
+          vue-loader
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/vuejs/awesome-vue"
+          target="_blank"
+        >
+          awesome-vue
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-  export default {
-    props: [
-      'prop1',
-      'prop2',
-      'prop3',
-      'longPropName'
-    ],
-    data() {
-      return {
-        message: 'Hello Vue-custom-element!'
-      };
-    },
-    computed: {
-      tableData() {
-        return [{
-          prop: 'prop1',
-          value: this.prop1,
-          type: typeof this.prop1
-        }, {
-          prop: 'prop2',
-          value: this.prop2,
-          type: typeof this.prop2
-        }, {
-          prop: 'prop3',
-          value: this.prop3,
-          type: typeof this.prop3
-        }, {
-          prop: 'long-prop-name',
-          value: this.longPropName,
-          type: typeof this.longPropName
-        }];
-      }
-    },
-    created() {
-      console.info('demo-basic created()');
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
     }
   }
+}
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>
