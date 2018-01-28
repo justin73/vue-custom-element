@@ -41,9 +41,10 @@ var DemoElement = { render: function () {
 })();
 
 var DemoElement2 = { render: function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "hello" }, [_c('h1', [_vm._v(_vm._s(_vm.msg))])]);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "hello" }, [_c('h1', [_vm._v(_vm._s(_vm.msg))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.prop1) + ", " + _vm._s(_vm.prop2) + ", " + _vm._s(_vm.prop3))])]);
   }, staticRenderFns: [], _scopeId: 'data-v-00eaf099',
   name: 'SecondComponent',
+  props: ['prop1', 'prop2', 'prop3'],
   data() {
     return {
       msg: 'This is the second vue component wrapped by vue-custom-element'
