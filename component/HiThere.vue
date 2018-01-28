@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <p>this is a vue custom element demo listing to changes for doc/vueElement.js</p>
     <ul>
       <li>
         <a
