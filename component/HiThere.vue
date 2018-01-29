@@ -81,6 +81,8 @@
         </a>
       </li>
     </ul>
+    <p>below is a child vue custom element to showcase that you can nest custom elements ;-) </p>
+    <slot></slot>
   </div>
 </template>
 

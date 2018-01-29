@@ -1,8 +1,8 @@
 {
   "name": "vue-hi-there",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
-  "main": "docs/vueElement.js",
+  "main": "dist/vueElement.js",
   "scripts": {
     "dev": "rimraf docs/vueElement.js && cross-env NODE_ENV=develop rollup -c -w",
     "build": "rimraf dist/vueElement.js && rimraf docs/vueElement.js && cross-env NODE_ENV=production rollup -c",
